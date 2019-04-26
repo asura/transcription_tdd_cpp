@@ -11,5 +11,9 @@ project(
 set(CMAKE_CXX_STANDARD 14)
 
 #######################################
+# CTest有効化
+enable_testing()
+
+#######################################
 # ビルド対象
 add_subdirectory(test)
