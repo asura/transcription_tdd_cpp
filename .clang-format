@@ -1,0 +1,14 @@
+AccessModifierOffset: -4
+AllowShortIfStatementsOnASingleLine: false
+BasedOnStyle: Google
+BreakBeforeBraces: Allman
+BreakConstructorInitializersBeforeComma: true
+ColumnLimit: 0
+Cpp11BracedListStyle: true
+DerivePointerAlignment: false
+IndentCaseLabels: false
+IndentWidth: 4
+NamespaceIndentation: None
+SortIncludes: true
+Standard: Cpp11
+UseTab: Never
