@@ -1,21 +1,5 @@
 #include <catch.hpp>
-
-namespace money
-{
-class Dollar
-{
-public:
-    int amount = 10;
-
-    explicit Dollar(int amount)
-    {
-    }
-
-    void times(int multiplier)
-    {
-    }
-};
-}  // namespace money
+#include "Dollar.h"
 
 TEST_CASE(
     "$5*2=$10",

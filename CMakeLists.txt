@@ -15,5 +15,12 @@ set(CMAKE_CXX_STANDARD 14)
 enable_testing()
 
 #######################################
+# パス設定
+include_directories(
+  ${CMAKE_SOURCE_DIR}/include
+)
+
+#######################################
 # ビルド対象
+add_subdirectory(src)
 add_subdirectory(test)

@@ -8,6 +8,12 @@ add_executable(
   main.cpp
   MoneyTest.cpp
 )
+
+target_link_libraries(
+  Tester
+  money
+)
+
 add_test(
   NAME Tester
   COMMAND $<TARGET_FILE:Tester>
