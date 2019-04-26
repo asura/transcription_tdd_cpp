@@ -6,6 +6,7 @@ include_directories(
 add_executable(
   Tester
   main.cpp
+  MoneyTest.cpp
 )
 add_test(
   NAME Tester
