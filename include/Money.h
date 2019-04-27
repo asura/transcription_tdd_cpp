@@ -9,9 +9,9 @@ protected:
     int amount;
 
 public:
-    Money(int amount);
+    explicit Money(int amount);
 
-    bool operator==(const Money& other) const;
+    virtual bool operator==(const Money& other) const;
 };
 }
 #endif /* !MONEY_H_ */

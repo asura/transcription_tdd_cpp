@@ -8,6 +8,7 @@ add_executable(
   main.cpp
   DollarTest.cpp
   FrancTest.cpp
+  MoneyTest.cpp
 )
 
 target_link_libraries(

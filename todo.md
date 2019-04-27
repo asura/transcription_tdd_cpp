@@ -8,9 +8,10 @@
 * [x] 5CHF*2=10CHF
 * [] DollarとFrancの重複
 * [x] op==の一般化
-* [] FrancとDollarを比較する
+* [x] FrancとDollarを比較する
 * [] op*の一般化
 * [] Moneyの丸め処理どうする?
 * [] op!=
 * [] op<
 * [] hash of Dollar
+* [] 通貨の概念
