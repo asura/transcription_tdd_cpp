@@ -6,7 +6,7 @@ include_directories(
 add_executable(
   Tester
   main.cpp
-  MoneyTest.cpp
+  DollarTest.cpp
 )
 
 target_link_libraries(

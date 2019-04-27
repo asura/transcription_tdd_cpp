@@ -10,6 +10,8 @@ public:
 
     explicit Dollar(int amount);
 
+    bool operator==(const Dollar& other) const;
+
     Dollar operator*(int multiplier) const;
 };
 }  // namespace money

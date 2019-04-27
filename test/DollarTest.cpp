@@ -3,7 +3,7 @@
 
 TEST_CASE(
     "$5*2=$10",
-    "[small]")
+    "[small][Dollar]")
 {
     GIVEN("$5を用意する")
     {
@@ -29,4 +29,12 @@ TEST_CASE(
             }
         }
     }
+}
+
+TEST_CASE(
+    "Dollar::op==",
+    "[small][Dollar]")
+{
+    CHECK(money::Dollar(5) == money::Dollar(5));
+    CHECK(!(money::Dollar(5) == money::Dollar(6)));
 }
