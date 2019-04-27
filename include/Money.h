@@ -10,6 +10,7 @@ protected:
 
 public:
     explicit Money(int amount);
+    virtual ~Money() = 0;
 
     virtual bool operator==(const Money& other) const;
 };

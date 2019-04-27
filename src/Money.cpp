@@ -6,6 +6,10 @@ money::Money::Money(int amount)
 {
 }
 
+money::Money::~Money()
+{
+}
+
 bool money::Money::operator==(const money::Money& other) const
 {
     return (amount == other.amount) && (typeid(*this) == typeid(other));
