@@ -7,15 +7,25 @@ TEST_CASE(
 {
     GIVEN("$5を用意する")
     {
-        money::Dollar five(5);
+        const money::Dollar five(5);
 
         WHEN("2倍する")
         {
-            five.times(2);
+            const auto product = five.times(2);
 
             THEN("$10になる")
             {
-                CHECK(10 == five.amount);
+                CHECK(10 == product.amount);
+            }
+
+            AND_WHEN("3倍する")
+            {
+                const auto another_product = five.times(3);
+
+                THEN("$15になる")
+                {
+                    CHECK(15 == another_product.amount);
+                }
             }
         }
     }
