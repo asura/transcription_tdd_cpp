@@ -16,6 +16,7 @@ public:
 
     bool operator==(const Money& other) const;
 
+    const Money operator+(const Money& addend) const;
     const Money operator*(int multiplier) const;
 
     static Money dollar(int amount);

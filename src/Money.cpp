@@ -1,6 +1,4 @@
 #include "Money.h"
-#include "Dollar.h"
-#include "Franc.h"
 
 money::Money::Money(
     int amount,
@@ -13,6 +11,11 @@ money::Money::Money(
 bool money::Money::operator==(const money::Money& other) const
 {
     return (m_amount == other.m_amount) && (m_currency == other.m_currency);
+}
+
+const money::Money money::Money::operator+(const Money& addend) const
+{
+    return Money(m_amount + addend.m_amount, m_currency);
 }
 
 const money::Money money::Money::operator*(int multiplier) const

@@ -1,6 +1,16 @@
 #include <catch.hpp>
-#include "Dollar.h"
-#include "Franc.h"
+#include "Money.h"
+
+TEST_CASE(
+    "Money::op+",
+    "[small][Money]")
+{
+    SECTION("ドルの演算")
+    {
+        const auto result = money::Money::dollar(5) + money::Money::dollar(5);
+        CHECK(money::Money::dollar(10) == result);
+    }
+}
 
 TEST_CASE(
     "Money::op*",
