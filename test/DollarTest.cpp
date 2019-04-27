@@ -2,33 +2,12 @@
 #include "Dollar.h"
 
 TEST_CASE(
-    "$5*2=$10",
+    "Dollar::op*",
     "[small][Dollar]")
 {
-    GIVEN("$5を用意する")
-    {
-        const money::Dollar five(5);
-
-        WHEN("2倍する")
-        {
-            const auto product = five * 2;
-
-            THEN("$10になる")
-            {
-                CHECK(10 == product.amount);
-            }
-
-            AND_WHEN("3倍する")
-            {
-                const auto another_product = five * 3;
-
-                THEN("$15になる")
-                {
-                    CHECK(15 == another_product.amount);
-                }
-            }
-        }
-    }
+    const money::Dollar five(5);
+    CHECK(money::Dollar(10) == five * 2);
+    CHECK(money::Dollar(15) == five * 3);
 }
 
 TEST_CASE(

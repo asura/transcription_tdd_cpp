@@ -5,9 +5,9 @@ namespace money
 {
 class Dollar
 {
-public:
     int amount;
 
+public:
     explicit Dollar(int amount);
 
     bool operator==(const Dollar& other) const;
