@@ -1,15 +1,18 @@
 #ifndef MONEY_H_
 #define MONEY_H_
 
+#include <string>
+
 namespace money
 {
 class Money
 {
 protected:
-    int amount;
+    int m_amount;
+    std::string m_currency;
 
 public:
-    explicit Money(int amount);
+    Money(int amount, const std::string& currency);
     virtual ~Money() = 0;
 
     virtual bool operator==(const Money& other) const;
