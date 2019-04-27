@@ -6,8 +6,6 @@ include_directories(
 add_executable(
   Tester
   main.cpp
-  DollarTest.cpp
-  FrancTest.cpp
   MoneyTest.cpp
 )
 

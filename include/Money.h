@@ -13,9 +13,13 @@ protected:
 
 public:
     Money(int amount, const std::string& currency);
-    virtual ~Money() = 0;
 
-    virtual bool operator==(const Money& other) const;
+    bool operator==(const Money& other) const;
+
+    const Money operator*(int multiplier) const;
+
+    static Money dollar(int amount);
+    static Money franc(int amount);
 };
 }
 #endif /* !MONEY_H_ */
