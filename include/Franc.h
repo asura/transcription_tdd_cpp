@@ -10,8 +10,6 @@ class Franc : public Money
 public:
     explicit Franc(int amount);
 
-    bool operator==(const Franc& other) const;
-
     Franc operator*(int multiplier) const;
 };
 }  // namespace money

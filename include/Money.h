@@ -10,6 +10,8 @@ protected:
 
 public:
     Money(int amount);
+
+    bool operator==(const Money& other) const;
 };
 }
 #endif /* !MONEY_H_ */
