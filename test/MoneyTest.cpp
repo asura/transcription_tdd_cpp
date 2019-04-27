@@ -11,7 +11,7 @@ TEST_CASE(
 
         WHEN("2倍する")
         {
-            const auto product = five.times(2);
+            const auto product = five * 2;
 
             THEN("$10になる")
             {
@@ -20,7 +20,7 @@ TEST_CASE(
 
             AND_WHEN("3倍する")
             {
-                const auto another_product = five.times(3);
+                const auto another_product = five * 3;
 
                 THEN("$15になる")
                 {

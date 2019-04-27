@@ -5,7 +5,7 @@ money::Dollar::Dollar(int amount)
 {
 }
 
-money::Dollar money::Dollar::times(int multiplier) const
+money::Dollar money::Dollar::operator*(int multiplier) const
 {
     return Dollar(amount * multiplier);
 }

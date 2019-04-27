@@ -10,7 +10,7 @@ public:
 
     explicit Dollar(int amount);
 
-    Dollar times(int multiplier) const;
+    Dollar operator*(int multiplier) const;
 };
 }  // namespace money
 
