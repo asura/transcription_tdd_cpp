@@ -1,12 +1,12 @@
 #ifndef FRANC_H_
 #define FRANC_H_
 
+#include "Money.h"
+
 namespace money
 {
-class Franc
+class Franc : public Money
 {
-    int amount;
-
 public:
     explicit Franc(int amount);
 

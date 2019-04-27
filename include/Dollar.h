@@ -1,12 +1,12 @@
 #ifndef DOLLAR_H_
 #define DOLLAR_H_
 
+#include "Money.h"
+
 namespace money
 {
-class Dollar
+class Dollar : public Money
 {
-    int amount;
-
 public:
     explicit Dollar(int amount);
 

@@ -1,7 +1,7 @@
 #include "Franc.h"
 
 money::Franc::Franc(int amount)
-    : amount(amount)
+    : Money(amount)
 {
 }
 

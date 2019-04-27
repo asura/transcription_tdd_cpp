@@ -1,7 +1,7 @@
 #include "Dollar.h"
 
 money::Dollar::Dollar(int amount)
-    : amount(amount)
+    : Money(amount)
 {
 }
 
