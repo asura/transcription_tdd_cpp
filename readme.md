@@ -11,7 +11,7 @@ $ make && ctest --output-on-failure
 1. `Money.times` および `Money.plus` を、それぞれ `Money::operator*` 、 `Money::operator+` として実装
    * C++ではこちらが自然かと
 1. `Expression`クラス、`Sum`クラスは不採用
-   * C++では純粋クラス(`Expression`)を実体で返却できない
+   * C++では抽象クラス(`Expression`)を実体で返却できない
    * `shared_ptr` を返すようにはできるが、そうすると3変数を加算するケースで `(a + b)->operator+(c)` という訳のわからない記述になってしまう
    * 上記デメリットを覆すだけのメリットを見出せなかった
    * `Money`に複数の通貨を保持可能な設計とすることで回避
