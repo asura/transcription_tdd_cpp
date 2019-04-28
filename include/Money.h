@@ -75,15 +75,12 @@ public:
         return result;
     }
 
-    Money reduce(const Currency& to, const Rate& rate) const
+    const Money reduce(const Currency& to, const Rate& rate) const
     {
         int amount = 0;
         for (const auto& from : m_amount)
         {
-            const Rate::FromTo from_to(
-                from.first,
-                to);
-            const auto find_result = rate.find(from_to);
+            const auto find_result = rate.find(from.first, to);
             if (!find_result.has_value())
             {
                 throw std::runtime_error("必要な為替レートが未登録");

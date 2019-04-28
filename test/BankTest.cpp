@@ -6,17 +6,12 @@ TEST_CASE(
     "Bank::reduce",
     "[small][Bank]")
 {
-    money::Rate rates;
     const money::Currency chf("CHF");
     const money::Currency usd("USD");
-    {
-        money::Rate::FromTo registered(chf, usd);
-        rates.set(registered, 2);
-    }
-    {
-        money::Rate::FromTo registered(usd, usd);
-        rates.set(registered, 1);
-    }
+
+    money::Rate rates;
+    rates.set(chf, usd, 2);
+    rates.set(usd, usd, 1);
 
     money::Bank bank;
 

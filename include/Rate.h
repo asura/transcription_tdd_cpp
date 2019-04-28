@@ -9,7 +9,7 @@ namespace money
 {
 class Rate
 {
-public:
+private:
     class FromTo
     {
     public:
@@ -51,8 +51,10 @@ private:
 
 public:
     /// 未設定なら追加、設定済みなら上書きする
-    void set(const FromTo& from_to, double rate)
+    void set(const Currency& from, const Currency& to, double rate)
     {
+        const FromTo from_to(from, to);
+
         rates_type::iterator p = m_rates.find(from_to);
         if (p == m_rates.end())
         {
@@ -63,8 +65,10 @@ public:
         p->second = rate;
     }
 
-    std::optional<double> find(const FromTo& from_to) const
+    std::optional<double> find(const Currency& from, const Currency& to) const
     {
+        const FromTo from_to(from, to);
+
         rates_type::const_iterator p = m_rates.find(from_to);
         if (p == m_rates.end())
         {

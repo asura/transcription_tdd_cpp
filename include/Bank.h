@@ -12,7 +12,7 @@ class Bank
 {
 public:
     /// 通貨変換
-    Money reduce(const Money& source, const Currency& to, const Rate& rate) const
+    const Money reduce(const Money& source, const Currency& to, const Rate& rate) const
     {
         return source.reduce(to, rate);
     }

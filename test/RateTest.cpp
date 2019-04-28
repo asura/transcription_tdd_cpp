@@ -5,24 +5,22 @@ TEST_CASE(
     "Rate::find",
     "[small][Rate]")
 {
+    const money::Currency chf("CHF");
+    const money::Currency jpy("JPY");
+    const money::Currency usd("USD");
+
     SECTION("存在しない変換ルールを指定")
     {
         money::Rate sut;
-        money::Rate::FromTo unregistered(
-            money::Currency("JPY"),
-            money::Currency("USD"));
-        const auto result = sut.find(unregistered);
+        const auto result = sut.find(jpy, usd);
         REQUIRE(!result.has_value());
     }
     SECTION("存在する変換ルールを指定")
     {
         money::Rate sut;
-        money::Rate::FromTo registered(
-            money::Currency("USD"),
-            money::Currency("CHF"));
-        sut.set(registered, 0.5);
+        sut.set(usd, chf, 0.5);
 
-        const auto result = sut.find(registered);
+        const auto result = sut.find(usd, chf);
         REQUIRE(result.has_value());
         CHECK(*result == 0.5);
     }
