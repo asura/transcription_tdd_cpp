@@ -7,17 +7,40 @@ TEST_CASE(
     "[small][Bank]")
 {
     money::Rate rates;
-    money::Rate::FromTo registered(
-        money::Currency("CHF"),
-        money::Currency("USD"));
-    rates.set(registered, 2);
+    const money::Currency chf("CHF");
+    const money::Currency usd("USD");
+    {
+        money::Rate::FromTo registered(chf, usd);
+        rates.set(registered, 2);
+    }
+    {
+        money::Rate::FromTo registered(usd, usd);
+        rates.set(registered, 1);
+    }
 
     money::Bank bank;
 
-    const auto result = bank.reduce(
-        money::Money::franc(2),
-        money::Currency("USD"),
-        rates);
+    SECTION("単一の通貨の場合")
+    {
+        const auto two_francs = money::Money::franc(2);
 
-    CHECK(money::Money::dollar(1) == result);
+        const auto result = bank.reduce(
+            two_francs,
+            usd,
+            rates);
+
+        CHECK(money::Money::dollar(1) == result);
+    }
+    SECTION("複数の通貨の場合")
+    {
+        const auto five_dollars = money::Money::dollar(5);
+        const auto ten_francs = money::Money::franc(10);
+
+        const auto result = bank.reduce(
+            five_dollars + ten_francs,
+            usd,
+            rates);
+
+        CHECK(money::Money::dollar(10) == result);
+    }
 }
