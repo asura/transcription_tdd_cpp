@@ -1,7 +1,6 @@
 #ifndef BANK_H_
 #define BANK_H_
 
-#include <string>
 #include "Currency.h"
 #include "Money.h"
 #include "Rate.h"

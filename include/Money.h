@@ -1,8 +1,7 @@
 #ifndef MONEY_H_
 #define MONEY_H_
 
-#include <iostream>
-#include <stdexcept>
+#include <stdexcept>  // runtime_error
 #include <unordered_map>
 #include "Currency.h"
 #include "Rate.h"
