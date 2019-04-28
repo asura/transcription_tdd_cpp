@@ -9,10 +9,10 @@ add_executable(
   MoneyTest.cpp
 )
 
-target_link_libraries(
-  Tester
-  money
-)
+#target_link_libraries(
+#  Tester
+#  money
+#)
 
 add_test(
   NAME Tester

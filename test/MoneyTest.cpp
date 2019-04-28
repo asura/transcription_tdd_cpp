@@ -7,8 +7,9 @@ TEST_CASE(
 {
     SECTION("ドルの演算")
     {
-        const auto result = money::Money::dollar(5) + money::Money::dollar(5);
-        CHECK(money::Money::dollar(10) == result);
+        const auto five = money::Money::dollar(5);
+        const auto sum = five + five;
+        CHECK(money::Money::dollar(10) == sum);
     }
 }
 
