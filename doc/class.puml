@@ -6,17 +6,17 @@ skinparam {
 hide circle
 hide empty members
 
-class Bank {
+class "Bank\n銀行 (為替変換器)" as Bank {
   + reduce(const Money&, const Currency&, const Rate&) const : const Money
 }
 
-class Currency {
+class "Currency\n通貨の種類" as Currency {
   - m_name : const std::string
   + Currency(const std::string&)
   + operator==(const Currency&) const : bool
 }
 
-class Money {
+class "Money\n手持ちの貨幣" as Money {
   - m_amount : std::unordered_map<Currency, int>
   + Money()
   + Money(int, const Currency&
@@ -34,7 +34,7 @@ class Money {
   - void add(int, const Currency&)
 }
 
-class Rate {
+class "Rate\n為替レート" as Rate {
   - m_rates : std::unordered_map<FromTo, double>
   + set(const Currency&, const Currency&, double) : void
   + find(const Currency&, const Currency&) const : std::optional<double>
@@ -56,9 +56,6 @@ FromTo o-l-> Currency : m_from
 FromTo o-l-> Currency : m_to
 Money *-r-> Currency
 
-note top of Bank: 為替変換器
-note bottom of Money: 手持ちの貨幣\n(複数の通貨を保持可)
-note bottom of Currency : 通貨の種類
-note right of Rate: 為替レート
+note bottom of Money: 複数の通貨を保持可
 
 @enduml
