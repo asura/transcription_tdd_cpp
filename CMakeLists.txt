@@ -22,5 +22,4 @@ include_directories(
 
 #######################################
 # ビルド対象
-add_subdirectory(src)
 add_subdirectory(test)
