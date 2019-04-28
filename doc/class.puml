@@ -1,0 +1,64 @@
+@startuml class
+skinparam {
+  monochrome true
+  shadowing false
+}
+hide circle
+hide empty members
+
+class Bank {
+  + reduce(const Money&, const Currency&, const Rate&) const : const Money
+}
+
+class Currency {
+  - m_name : const std::string
+  + Currency(const std::string&)
+  + operator==(const Currency&) const : bool
+}
+
+class Money {
+  - m_amount : std::unordered_map<Currency, int>
+  + Money()
+  + Money(int, const Currency&
+
+  + operator==(const Money&) const : bool
+
+  + operator+(const Money&) const : const Money
+  + operator*(int) const : const Money
+
+  + reduce(const Currency&, const Rate&) const: const Money
+
+  + {static} dollar(int) : Money
+  + {static} franc(int) : Money
+
+  - void add(int, const Currency&)
+}
+
+class Rate {
+  - m_rates : std::unordered_map<FromTo, double>
+  + set(const Currency&, const Currency&, double) : void
+  + find(const Currency&, const Currency&) const : std::optional<double>
+}
+
+class "Rate::FromTo" as FromTo {
+  + FromTo(const Currency&, const Currency&)
+
+  + operator==(const FromTo&) const : bool
+
+  + hash() const : std::size_t
+}
+
+Bank ...> Money
+Bank ...> Currency
+Bank ..> Rate
+Rate *--> FromTo
+FromTo o-l-> Currency : m_from
+FromTo o-l-> Currency : m_to
+Money *-r-> Currency
+
+note top of Bank: 為替変換器
+note bottom of Money: 手持ちの貨幣\n(複数の通貨を保持可)
+note bottom of Currency : 通貨の種類
+note right of Rate: 為替レート
+
+@enduml

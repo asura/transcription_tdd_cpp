@@ -1,0 +1,50 @@
+@startuml seq
+title 為替変換のシーケンス
+
+skinparam {
+  monochrome true
+  shadowing false
+}
+hide footbox
+
+participant Bank
+participant "Money\n: source" as Money
+participant "Money\n: result" as Money2
+participant Rate
+participant "Rate::FromTo" as FromTo
+
+-> Bank : reduce(source, to_currency, rate)
+activate Bank
+
+  Bank -> Money : reduce(to_currency, rate)
+  activate Money
+
+    loop 通貨の種類
+      Money -> Rate : find(currency, to_currency)
+      activate Rate
+
+        create FromTo
+        Rate -> FromTo : <<create>>
+        activate FromTo
+        Rate <-- FromTo : from_to
+        deactivate FromTo
+
+        note right of Rate : 検索
+
+      Money <-- Rate : 為替レート
+      deactivate Rate
+
+      note right of Money: レートに合わせて変換、集計
+    end
+
+    create Money2
+    Money -> Money2 : <<create>>
+    activate Money2
+    Money <-- Money2 : result
+    deactivate Money2
+  Bank <-- Money : result
+  deactivate Money
+
+<-- Bank : result
+deactivate Bank
+@enduml

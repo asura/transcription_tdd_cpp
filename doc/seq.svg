@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="549px" preserveAspectRatio="none" style="width:852px;height:549px;" version="1.1" viewBox="0 0 852 549" width="852px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="140" x="357" y="23.5352">為替変換のシーケンス</text><rect fill="#FFFFFF" height="406.5703" style="stroke: #383838; stroke-width: 1.0;" width="10" x="228" y="112.7754"/><rect fill="#FFFFFF" height="347.9492" style="stroke: #383838; stroke-width: 1.0;" width="10" x="413" y="142.0859"/><rect fill="#FFFFFF" height="47.9766" style="stroke: #383838; stroke-width: 1.0;" width="10" x="550.5" y="412.748"/><rect fill="#FFFFFF" height="135.4199" style="stroke: #383838; stroke-width: 1.0;" width="10" x="613" y="195.707"/><rect fill="#FFFFFF" height="31.4883" style="stroke: #383838; stroke-width: 1.0;" width="10" x="773" y="235.0176"/><rect fill="#FFFFFF" height="217.3516" style="stroke: #000000; stroke-width: 2.0;" width="467" x="374" y="157.0859"/><rect fill="#F8F8F8" height="30.4883" style="stroke: #383838; stroke-width: 1.5;" width="106" x="725" y="203.707"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="92" x="732" y="224.2422">Rate::FromTo</text><rect fill="#F8F8F8" height="46.9766" style="stroke: #383838; stroke-width: 1.5;" width="61" x="525" y="381.4375"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="45" x="533" y="401.9727">Money</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="47" x="532" y="418.4609">: result</text><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="232.5" x2="232.5" y1="81.4648" y2="537.3457"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="418" x2="418" y1="81.4648" y2="537.3457"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="555" x2="555" y1="420.4258" y2="537.3457"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="618" x2="618" y1="81.4648" y2="537.3457"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="778" x2="778" y1="234.4512" y2="537.3457"/><rect fill="#F8F8F8" height="30.4883" style="stroke: #383838; stroke-width: 1.5;" width="47" x="209.5" y="49.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="33" x="216.5" y="70.5117">Bank</text><rect fill="#F8F8F8" height="46.9766" style="stroke: #383838; stroke-width: 1.5;" width="68" x="384" y="33.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="45" x="395.5" y="54.0234">Money</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="391" y="70.5117">: source</text><rect fill="#F8F8F8" height="30.4883" style="stroke: #383838; stroke-width: 1.5;" width="44" x="596" y="49.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="30" x="603" y="70.5117">Rate</text><rect fill="#FFFFFF" height="406.5703" style="stroke: #383838; stroke-width: 1.0;" width="10" x="228" y="112.7754"/><rect fill="#FFFFFF" height="347.9492" style="stroke: #383838; stroke-width: 1.0;" width="10" x="413" y="142.0859"/><rect fill="#FFFFFF" height="47.9766" style="stroke: #383838; stroke-width: 1.0;" width="10" x="550.5" y="412.748"/><rect fill="#FFFFFF" height="135.4199" style="stroke: #383838; stroke-width: 1.0;" width="10" x="613" y="195.707"/><rect fill="#FFFFFF" height="31.4883" style="stroke: #383838; stroke-width: 1.0;" width="10" x="773" y="235.0176"/><polygon fill="#383838" points="216,108.7754,226,112.7754,216,116.7754,220,112.7754" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0;" x1="3" x2="222" y1="112.7754" y2="112.7754"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="206" x="10" y="108.0332">reduce(source, to_currency, rate)</text><polygon fill="#383838" points="401,138.0859,411,142.0859,401,146.0859,405,142.0859" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0;" x1="238" x2="407" y1="142.0859" y2="142.0859"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="156" x="245" y="137.3438">reduce(to_currency, rate)</text><path d="M374,157.0859 L448,157.0859 L448,164.0859 L438,174.0859 L374,174.0859 L374,157.0859 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"/><rect fill="none" height="217.3516" style="stroke: #000000; stroke-width: 2.0;" width="467" x="374" y="157.0859"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="29" x="389" y="170.6543">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="63" x="463" y="169.7207">[通貨の種類]</text><polygon fill="#383838" points="601,191.707,611,195.707,601,199.707,605,195.707" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0;" x1="423" x2="607" y1="195.707" y2="195.707"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="169" x="430" y="190.9648">find(currency, to_currency)</text><polygon fill="#383838" points="713,221.0176,723,225.0176,713,229.0176,717,225.0176" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0;" x1="623" x2="719" y1="225.0176" y2="225.0176"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="78" x="630" y="220.2754">&lt;&lt;create&gt;&gt;</text><rect fill="#F8F8F8" height="30.4883" style="stroke: #383838; stroke-width: 1.5;" width="106" x="725" y="203.707"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="92" x="732" y="224.2422">Rate::FromTo</text><polygon fill="#383838" points="634,262.5059,624,266.5059,634,270.5059,630,266.5059" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="628" x2="777" y1="266.5059" y2="266.5059"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="50" x="640" y="261.7637">from_to</text><path d="M628,279.5059 L628,304.5059 L675,304.5059 L675,289.5059 L665,279.5059 L628,279.5059 " fill="#ECECEC" style="stroke: #383838; stroke-width: 1.0;"/><path d="M665,279.5059 L665,289.5059 L675,289.5059 L665,279.5059 " fill="#ECECEC" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="26" x="634" y="297.0742">検索</text><polygon fill="#383838" points="434,327.127,424,331.127,434,335.127,430,331.127" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="428" x2="617" y1="331.127" y2="331.127"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="65" x="440" y="326.3848">為替レート</text><path d="M428,344.127 L428,369.127 L618,369.127 L618,354.127 L608,344.127 L428,344.127 " fill="#ECECEC" style="stroke: #383838; stroke-width: 1.0;"/><path d="M608,344.127 L608,354.127 L618,354.127 L608,344.127 " fill="#ECECEC" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="169" x="434" y="361.6953">レートに合わせて変換、集計</text><polygon fill="#383838" points="513,398.748,523,402.748,513,406.748,517,402.748" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0;" x1="423" x2="519" y1="402.748" y2="402.748"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="78" x="430" y="398.0059">&lt;&lt;create&gt;&gt;</text><rect fill="#F8F8F8" height="46.9766" style="stroke: #383838; stroke-width: 1.5;" width="61" x="525" y="381.4375"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="45" x="533" y="401.9727">Money</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="47" x="532" y="418.4609">: result</text><polygon fill="#383838" points="434,456.7246,424,460.7246,434,464.7246,430,460.7246" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="428" x2="554.5" y1="460.7246" y2="460.7246"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36" x="440" y="455.9824">result</text><polygon fill="#383838" points="249,486.0352,239,490.0352,249,494.0352,245,490.0352" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="243" x2="417" y1="490.0352" y2="490.0352"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36" x="255" y="485.293">result</text><polygon fill="#383838" points="14,515.3457,4,519.3457,14,523.3457,10,519.3457" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="8" x2="232" y1="519.3457" y2="519.3457"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36" x="20" y="514.6035">result</text><!--
+@startuml seq
+title 為替変換のシーケンス
+
+skinparam {
+  monochrome true
+  shadowing false
+}
+hide footbox
+
+participant Bank
+participant "Money\n: source" as Money
+participant "Money\n: result" as Money2
+participant Rate
+participant "Rate::FromTo" as FromTo
+
+-> Bank : reduce(source, to_currency, rate)
+activate Bank
+
+  Bank -> Money : reduce(to_currency, rate)
+  activate Money
+
+    loop 通貨の種類
+      Money -> Rate : find(currency, to_currency)
+      activate Rate
+
+        create FromTo
+        Rate -> FromTo : <<create>>
+        activate FromTo
+        Rate <- - FromTo : from_to
+        deactivate FromTo
+
+        note right of Rate : 検索
+
+      Money <- - Rate : 為替レート
+      deactivate Rate
+
+      note right of Money: レートに合わせて変換、集計
+    end
+
+    create Money2
+    Money -> Money2 : <<create>>
+    activate Money2
+    Money <- - Money2 : result
+    deactivate Money2
+  Bank <- - Money : result
+  deactivate Money
+
+<- - Bank : result
+deactivate Bank
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 20:04:44 JST 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_121-b13
+Operating System: Mac OS X
+OS Version: 10.13.6
+Default Encoding: UTF-8
+Language: ja
+Country: JP
+--></g></svg>
