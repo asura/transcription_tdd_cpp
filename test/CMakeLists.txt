@@ -6,7 +6,9 @@ include_directories(
 add_executable(
   Tester
   main.cpp
+  BankTest.cpp
   MoneyTest.cpp
+  RateTest.cpp
 )
 
 #target_link_libraries(
