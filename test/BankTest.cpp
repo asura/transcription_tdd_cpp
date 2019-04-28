@@ -11,7 +11,6 @@ TEST_CASE(
 
     money::Rate rates;
     rates.set(chf, usd, 2);
-    rates.set(usd, usd, 1);
 
     money::Bank bank;
 

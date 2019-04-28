@@ -67,6 +67,11 @@ public:
 
     std::optional<double> find(const Currency& from, const Currency& to) const
     {
+        if (from == to)
+        {
+            return 1.0;
+        }
+
         const FromTo from_to(from, to);
 
         rates_type::const_iterator p = m_rates.find(from_to);
